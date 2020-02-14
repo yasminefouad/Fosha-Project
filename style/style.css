@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#main-header {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 8px;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-toggler {
+    border-style: none;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.slogan {
+    font-size: 24px;
+    font-weight: 500;
+    color: #D2064E;
+    margin-bottom: 24px;
+}
+.rating {
+    color: #D2064E;
+}
+.rate:hover {
+color: #D2064E;}
+.whoAreWeItem a {
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 28px;
+}
+.readMoreLink {
+font-size: 18px;
+font-weight: 500;
+color: #D2064E;
+
+}
+.whoAreWeIcon {
+    background-color: #D2064E;
+    border-radius: 16px;
+    color: white;
+    width: 360px;
+    height: 160px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 32px;
+}
+
+.whoAreWeSmallIcon {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whoAreWeIcon h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#categories,
+#tipsAndTricks {
+    background-color: #F8F8F8;
+}
+
+.searchBar {
+    margin-top: 12rem;
+}
+
+#whoAreWe,
+#categories,
+#popular,
+#tipsAndTricks,
+#subCategories,
+#popularFoodRestaurants {
+    margin-top: 72px;
+    padding: 32px 0;
+}
+
+.whoAreWeItem p {
+    font-size: 24px;
+}
+
+.input-group {
+    border-radius: 50px;
+    border: 1px solid white;
+    padding: 24px;
+    margin-top: 30px;
+    }
+
+.dropDownButton {
+    background: white;
+    border-radius: 50px;
+    margin-bottom: 8px;
+    text-align: left;
+    padding-left: 24px;
+    /* width: 220px; */
+}
+.dropdown-toggle {
+    background: white;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+}
+.inputButton {
+    border-radius: 50px;
+    height: 40px;
+    text-align: left;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.submitButton {
+    border-radius: 50px;
+    height: 40px;
+    background-color: #D2064E;
+    color: white;
+    border: none;
+}
+
+.thingItem {
+    background-color: #F8F8F8;
+    padding: 16px;
+    border-radius: 16px;
+    min-height: 450px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
+}
+
+.goingOutRow {
+    max-height: 670px;
+}
+
+.thingItemPhoto,
+.categoryPhoto {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.thingItemPhoto img,
+.categoryPhoto img {
+    object-fit: cover;
+    border-radius: 16px;
+    transition: all 1.3s ease;
+    vertical-align: middle;
+}
+
+.thingItemPhoto img:hover,
+.categoryPhoto img:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.thingItem h5 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.thingItem p {
+    font-size: 14px;
+}
+
+.thingItem i {
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.thingItemPhoto,
+.thingItemAddress,
+.thingItemRating {
+    margin-bottom: 16px;
+}
+.tipsAndTricksPhoto {
+    border-radius:  16px 16px 0 0;
+    overflow: hidden;
+}
+.tipsAndTricksPhoto img {
+    border-radius:  16px 16px 0 0;
+}
+.tipsAndTricksArticle {
+    background-color: white;
+    border-radius: 0 0 16px 16px;
+}
+#footerData {
+    background: url(../assets/footerPhoto.svg);
+    color: white;
+    max-height: 320px;
+}
+
+.links {
+    margin-top: 24px;
+}
+
+.footerLinks a {
+    color: white;
+    font-size: 12px;
+    margin-right: 18px;
+}
+
+.social {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerLinks {
+    margin: 0 auto 24px;
+}
+
+#copyright {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    height: 35px;
+    background-color: #D2064E;
+}
+#footerData p {
+    font-size: 10px;
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+#footerData img {
+    margin-bottom: 8px;
+}
+.foshaData {
+    font-size:16px;
+    font-weight: 500;
+}
