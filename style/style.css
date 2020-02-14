@@ -237,7 +237,9 @@ h6 {
     background-color: white;
     border-radius: 0 0 16px 16px;
 }
-
+.footerPhoto {
+    margin-bottom: 12px;
+}
 #footerData {
     background: url(../assets/footerPhoto.svg);
     color: white;
