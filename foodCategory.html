@@ -21,6 +21,7 @@
 
 <body>
 
+
     <header>
         <div id="main-header">
             <div class="top-header border border-left-0 border-right-0 border-top-0" style="background-color: #D2064E;">
@@ -30,7 +31,7 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -65,6 +66,7 @@
     </header>
 
     <main>
+        <span class="pagination">FOSHA >> Food</span>
         <div id="subCategories">
             <div class="container text-center">
                 <h5>Browse by food type</h5>
@@ -100,72 +102,79 @@
                     <p>Discover some of the most popular restaurant based<br>
                         on user reviews and ratings.</p>
                 </div>
-                <div id="popularR">
-                    <div class="popularRestaurants">
-                        <div class="container">
-                            <div id="popularRestaurantsItems-carousel" class="owl-carousel">
-                                <div class="restaurantsItem">
-                                    <div class="restaurantsItemPhoto">
-                                        <img src="assets/restaurantsItemPhotoLeft.svg">
+                        <div class="popularFoodRestaurants pt-2">
+                            <div class="container">
+                                <div id="popularFoodRestaurants-carousel" class="owl-carousel">
+                                    <div class="restaurantItem">
+                                        <div class="thingItemPhoto">
+                                            <img class="w-100" src="assets/restaurantsItemPhotoLeft.svg">
+                                        </div>
+                                        <div class="thingItemAddress">
+                                            <h5>GaLaxy Cinema</h5>
+                                            <p><i class="fas fa-map-marker-alt"></i>Gezira Mall - Plaza Building Mansoura
+                                                DQ</p>
+                                            <p><i class="fas fa-phone"></i>0115 078 1125</p>
+                                        </div>
+                                        <div class="thingItemRating">
+                                            <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i
+                                                class="fas fa-star rating"></i><i class="far fa-star rate"></i><i
+                                                class="far fa-star rate"></i><span style="font-size:12px;">(15 reviews)</span><i class="far fa-heart like"></i>
+                                        </div>
                                     </div>
-                                    <div class="restaurantsItemAddress">
-                                        <h5>GaLaxy Cinema Mansoura</h5>
-                                        <p><i class="fas fa-map-marker-alt"></i> Gezira Mall - Plaza Building Mansoura
-                                            DQ</p>
-                                        <p><i class="fas fa-phone"></i> 0115 078 1125</p>
+                                    <div class="restaurantItem">
+                                        <div class="thingItemPhoto">
+                                            <img class="w-100" src="assets/restaurantsItemPhotoCenter.svg">
+                                        </div>
+                                        <div class="thingItemAddress">
+                                            <h5>GWSC Bowling Court</h5>
+                                            <p><i class="fas fa-map-marker-alt"></i>Mit Khamis WA Kafr Al Mougi, Mansoura,
+                                                Dakahlia overnorate</p>
+                                            <p><i class="fas fa-clock"></i>Opens 8AM Closes 11:45 PM</p>
+                                        </div>
+                                        <div class="thingItemRating">
+                                            <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i
+                                                class="fas fa-star rating"></i><i class="far fa-star rate"></i><i
+                                                class="far fa-star rate"></i> <span style="font-size:12px;">(28 reviews)</span><i class="far fa-heart like"></i>
+                                        </div>
                                     </div>
-                                    <div class="restaurantsItemRating">
-                                        <span></span>
-                                        <p>( 23 reviews )</p>
+                                    <div class="restaurantItem">
+                                        <div class="thingItemPhoto">
+                                            <img class="w-100" src="assets/restaurantsItemPhotoRight.svg">
+                                        </div>
+                                        <div class="thingItemAddress">
+                                            <h5>StoneYard Cafe</h5>
+                                            <p><i class="fas fa-map-marker-alt"></i>Mit Badr Khamees, Mansoura, akahlia
+                                                Governorate</p>
+                                            <p><i class="fas fa-clock"></i> Opens 10AM Closes 3AM </p>
+                                            <p><i class="fas fa-phone"></i>0100 107 0024</p>
+                                        </div>
+                                        <div class="thingItemRating">
+                                            <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i
+                                                class="fas fa-star rating"></i><i class="far fa-star rate"></i><i
+                                                class="far fa-star rate"></i> <span style="font-size:12px;">(23 reviews)</span><i class="far fa-heart like"></i>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="restaurantsItem">
-                                    <div class="restaurantsItemPhoto">
-                                        <img src="assets/restaurantsItemPhotoCenter.svg">
-                                    </div>
-                                    <div class="restaurantsItemAddress">
-                                        <h5>GaLaxy Cinema Mansoura</h5>
-                                        <p><i class="fas fa-map-marker-alt"></i> Gezira Mall - Plaza Building Mansoura
-                                            DQ</p>
-                                        <p><i class="fas fa-phone"></i> 0115 078 1125</p>
-                                    </div>
-                                    <div class="restaurantsItemRating">
-                                        <span></span>
-                                        <p>( 23 reviews )</p>
-                                    </div>
-                                </div>
-                                <div class="restaurantsItem">
-                                    <div class="restaurantsItemPhoto">
-                                        <img src="assets/restaurantsItemPhotoRight.svg">
-                                    </div>
-                                    <div class="restaurantsItemAddress">
-                                        <h5>GaLaxy Cinema Mansoura</h5>
-                                        <p><i class="fas fa-map-marker-alt"></i> Gezira Mall - Plaza Building Mansoura
-                                            DQ</p>
-                                        <p><i class="fas fa-phone"></i> 0115 078 1125</p>
-                                    </div>
-                                    <div class="restaurantsItemRating">
-                                        <span></span>
-                                        <p>( 23 reviews )</p>
-                                    </div>
-                                </div>
-                                <div class="trestaurantsItem">
-                                    <div class="restaurantsItemPhoto">
-                                        <img src="assets/restaurantsItemPhotoLeft.svg">
-                                    </div>
-                                    <div class="restaurantsItemAddress">
-                                        <h5>GaLaxy Cinema Mansoura</h5>
-                                        <p><i class="fas fa-map-marker-alt"></i> Gezira Mall - Plaza Building Mansoura
-                                            DQ</p>
-                                        <p><i class="fas fa-phone"></i> 0115 078 1125</p>
-                                    </div>
-                                    <div class="restaurantsItemRating">
-                                        <span></span>
-                                        <p>( 23 reviews )</p>
+                                    <div class="restaurantItem">
+                                        <div class="thingItemPhoto">
+                                            <img class="w-100" src="assets/restaurantsItemPhotoCenter.svg">
+                                        </div>
+                                        <div class="thingItemAddress">
+                                            <h5>GWSC Bowling Court</span></h5>
+                                            <p><i class="fas fa-map-marker-alt"></i>Mit Khamis WA Kafr Al Mougi, Mansoura,
+                                                Dakahlia overnorate</p>
+                                            <p><i class="fas fa-clock"></i>Opens 8AM Closes 11:45 PM</p>
+                                        </div>
+                                        <div class="thingItemRating">
+                                            <i class="fas fa-star rating"></i><i class="fas fa-star rating"></i><i
+                                                class="fas fa-star rating"></i><i class="far fa-star rate"></i><i
+                                                class="far fa-star rate"></i> <span style="font-size:12px;">(28 reviews)</span><i class="far fa-heart like"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -174,43 +183,50 @@
     </main>
 
     <footer>
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-lg-4 col-12">
-                    <div class="footerPhoto">
-                        <img src="assets/logoFoshaFooter.svg">
-                        <h6>FOSHA mate : Find Our Special Help Always</h6>
-                        <p>It's challenging to enjoy your time its easier to be a coach potato ,luckily you don't
-                            have to sweat the great time is at your fingertips.
-                            Fosha mate opens all gates</p>
+        <div id="footerData">
+            <div class="container pt-4">
+                <div class="row justify-content-center align-content-center align-items-center">
+                    <div class="col-lg-5 col-12">
+                        <div class="footerPhoto">
+                            <img src="assets/logoFoshaFooter.svg">
+                        </div>
+                        <span class="foshaData">FOSHA mate : Find Our Special Help Always</span>
+                        <p>It's challenging to enjoy your time its easier to be a coach potato ,luckily<br>
+                            you don't have to sweat the great time is at your fingertips.<br>
+                            FOSHA MATE OPENS ALL GATES</p>
                     </div>
-                </div>
-                <div class="col-lg-5"></div>
-                <div class="col-lg-3 col-12">
-                    <div class="footerLinks">
-                        <h6>Subscribe to Our Newspaper</h6>
-                        <p>In order to get latest places, reviews and user rating about things to do.</p>
-                        <button type="input">Email Address</button>
-                        <button type="submit">SUBSCRIBE</button>
-                        <a href="">About FOSHA</a>
-                        <a href="">Work with us</a>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms & conditions</a>
-                        <a href="">Contact us</a>
-                        <a href="">F & Q</a>
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-3 col-12">
+                        <div class="footerLinks">
+                            <span class="foshaData">Subscribe to Our Newspaper</span>
+                            <p>get latest places, reviews and rating about things to do.</p>
+                            <input type="text" class="form-control inputButton" placeholder="Email Address">
+                            <button type="submit" class="form-control submitButton">SUBSCRIBE</button>
+                            <div class="links"><a href="">About FOSHA</a>
+                                <a href="">Contact us</a>
+                                <a href="">F & Q</a>
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms & conditions</a>
+                                <a href="">Work With Us</a>
+                                <a href="">Tips & Tricks</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center align-content-center">
-                <div class="col-1">© FOSHA 2020</div>
-                <div class="col-9"></div>
-                <div class="col-2">
-                    <span class="m-2"><i class="fab fa-instagram"></i></span>
-                    <span class="m-2"><i class="fab fa-twitter"></i></span>
-                    <span class="m-2"><i class="fab fa-facebook-f"></i></span>
+            <div id="copyright">
+                <div class="container">
+                    <div class="row justify-content-center align-content-center align-items-center">
+                        <div class="col-2">© FOSHA 2020</div>
+                        <div class="col-8"></div>
+                        <div class="col-2 social">
+                            <span class="m-2"><i class="fab fa-instagram"></i></span>
+                            <span class="m-2"><i class="fab fa-twitter"></i></span>
+                            <span class="m-2"><i class="fab fa-facebook-f"></i></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

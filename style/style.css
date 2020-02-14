@@ -62,11 +62,19 @@ h6 {
 .rating {
     color: #D2064E;
 }
-
+a:hover {
+    text-decoration: none;
+    color: black;
+}
 .blogAddress {
     font-size: 24px;
     font-weight: 500;
     color: #D2064E;
+}
+
+.blogAddress:hover{
+    color:black;
+    text-decoration: none;
 }
 
 .rate:hover {
@@ -84,7 +92,6 @@ h6 {
     font-size: 18px;
     font-weight: 500;
     color: #D2064E;
-
 }
 
 .whoAreWeIcon {
@@ -112,7 +119,8 @@ h6 {
 }
 
 #categories,
-#tipsAndTricks {
+#tipsAndTricks,
+#popularFoodRestaurants {
     background-color: #F8F8F8;
 }
 
@@ -126,7 +134,7 @@ h6 {
 #tipsAndTricks,
 #subCategories,
 #popularFoodRestaurants {
-    margin-top: 72px;
+    margin-top: 64px;
     padding: 32px 0;
 }
 
@@ -179,11 +187,24 @@ h6 {
     min-height: 460px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
 }
-
+.restaurantItem {
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    min-height: 460px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
+}
+.pagination {
+color: #D2064E;
+margin-left:120px;
+margin-top: 20px;
+}
 .goingOutRow {
     max-height: 670px;
 }
-
+.subCategoryPhoto {
+    margin-bottom: 32px;
+}
 .thingItemPhoto,
 .categoryPhoto {
     overflow: hidden;
@@ -203,17 +224,20 @@ h6 {
     transform: scale(1.1) rotate(2deg);
 }
 
-.thingItem h5 {
+.thingItem h5,
+.restaurantItem h5 {
     font-size: 21px;
     font-weight: 600;
 }
 
-.thingItem p {
+.thingItem p,
+.restaurantItem p {
     font-size: 14px;
     margin-bottom: 4px;
 }
 
-.thingItem i {
+.thingItem i,
+.restaurantItem i {
     font-size: 12px;
     margin-right: 8px;
 }
@@ -291,10 +315,35 @@ h6 {
 }
 
 
+@media only screen and (max-width: 600px) {
+    h5 {
+        margin-top: 10px;
+    }
 
-
-@media only screen and (max-width:600px) {
     .whoAreWeItem p {
         font-size: 18px;
     }
+
+    .whoAreWeIcon {
+        margin: 10px auto;
+    }
+
+    .category__details {
+        opacity: 1;
+        top: 34px;
+    }
+
+    .goingOutRow .category__details {
+        opacity: 1;
+        top: 80px;
+    }
+
+    .thingItemPhoto,
+    .categoryPhoto {
+        overflow: hidden;
+        border-radius: 16px;
+        position: relative;
+        background: #000000;
+    }
+
 }
