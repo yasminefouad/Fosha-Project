@@ -394,9 +394,11 @@ textarea {
 .category__details .category__name {
     font-size: 32px;
 }
+
 .category__details .subcategory__name {
     font-size: 24px;
 }
+
 .categoryPhoto:hover img {
     background: #000000;
     opacity: .6;

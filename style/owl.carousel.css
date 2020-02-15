@@ -35,7 +35,7 @@
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  min-height:520px;
+  min-height: 520px;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
@@ -81,7 +81,9 @@
 }
 
 .owl-dots {
-text-align: center;}
+  text-align: center;
+}
+
 .owl-carousel button.owl-dot {
   border-radius: 50%;
   border: none;
@@ -89,26 +91,29 @@ text-align: center;}
   padding: 6px;
   margin-right: 4px;
 }
+
 .owl-carousel button.owl-dot.active {
   background-color: #D2064E;
 }
+
 .owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next
- {
+.owl-carousel .owl-nav button.owl-next {
   position: absolute;
-  top:50%;
+  top: 50%;
   border: none;
   padding: 8px;
 }
-.owl-carousel .owl-nav button.owl-prev 
-{
-    left:0;
-    margin-left: -40px;
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+  margin-left: -40px;
 }
+
 .owl-carousel .owl-nav button.owl-next {
-    right:0;
-    margin-right: -40px;
+  right: 0;
+  margin-right: -40px;
 }
+
 .owl-carousel.owl-loaded {
   display: block;
 }
