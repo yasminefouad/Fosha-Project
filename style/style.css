@@ -59,21 +59,34 @@ h6 {
     float: right
 }
 
+.likeFood {
+    color: #D2064E;
+    background-color: #F8F8F8;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    top: 0;
+    float: right
+}
+
 .rating {
     color: #D2064E;
 }
+
 a:hover {
     text-decoration: none;
     color: black;
 }
+
 .blogAddress {
     font-size: 24px;
     font-weight: 500;
     color: #D2064E;
 }
 
-.blogAddress:hover{
-    color:black;
+.blogAddress:hover {
+    color: black;
     text-decoration: none;
 }
 
@@ -133,7 +146,8 @@ a:hover {
 #popular,
 #tipsAndTricks,
 #subCategories,
-#popularFoodRestaurants {
+#popularFoodRestaurants,
+#FoodRestaurants {
     margin-top: 64px;
     padding: 32px 0;
 }
@@ -187,6 +201,7 @@ a:hover {
     min-height: 460px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
 }
+
 .restaurantItem {
     background-color: white;
     padding: 16px;
@@ -194,25 +209,34 @@ a:hover {
     min-height: 460px;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, .1);
 }
+
 .pagination {
-color: #D2064E;
-margin-left:120px;
-margin-top: 20px;
+    color: #D2064E;
+    margin-left: 120px;
+    margin-top: 20px;
 }
+
 .goingOutRow {
     max-height: 670px;
 }
+
 .subCategoryPhoto {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    margin-right: 16px;
 }
+
 .thingItemPhoto,
-.categoryPhoto {
+.categoryPhoto,
+.galleryImg {
     overflow: hidden;
     border-radius: 16px;
+    position: relative;
+    background: #000000;
 }
 
 .thingItemPhoto img,
-.categoryPhoto img {
+.categoryPhoto img,
+.galleryImg img {
     object-fit: cover;
     border-radius: 16px;
     transition: all 1.3s ease;
@@ -224,20 +248,27 @@ margin-top: 20px;
     transform: scale(1.1) rotate(2deg);
 }
 
+.restaurantItemData {
+    margin-top: -150px;
+}
+
 .thingItem h5,
-.restaurantItem h5 {
+.restaurantItem h5,
+.restaurantItemData h5 {
     font-size: 21px;
     font-weight: 600;
 }
 
 .thingItem p,
-.restaurantItem p {
+.restaurantItem p,
+.restaurantItemData p {
     font-size: 14px;
     margin-bottom: 4px;
 }
 
 .thingItem i,
-.restaurantItem i {
+.restaurantItem i,
+.restaurantItemData i {
     font-size: 12px;
     margin-right: 8px;
 }
@@ -261,9 +292,11 @@ margin-top: 20px;
     background-color: white;
     border-radius: 0 0 16px 16px;
 }
+
 .footerPhoto {
     margin-bottom: 12px;
 }
+
 #footerData {
     background: url(../assets/footerPhoto.svg);
     color: white;
@@ -280,11 +313,46 @@ margin-top: 20px;
     margin-right: 18px;
 }
 
+.linkColor {
+    color: #D2064E;
+}
+
+.linkColor:hover {
+    color: #707070;
+}
+
 .social {
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.overviewImg {
+    width: 300px;
+}
+
+.avtarImg {
+    width: 40px;
+    margin-right: 16px;
+}
+
+.avtarComment {
+    text-align: left;
+    background-color: #F8F8F8;
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+
+.tab-content {
+    margin-top: 20px;
 }
 
 .footerLinks {
@@ -314,10 +382,42 @@ margin-top: 20px;
     font-weight: 500;
 }
 
+.category__details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: all .2s ease-in;
+    top: 100px;
+}
+
+.category__details .category__name {
+    font-size: 32px;
+}
+.category__details .subcategory__name {
+    font-size: 24px;
+}
+.categoryPhoto:hover img {
+    background: #000000;
+    opacity: .6;
+}
+
+.categoryPhoto:hover .category__details {
+    opacity: 1;
+}
+
+.goingOutRow .category__details {
+    top: 290px;
+}
+
 
 @media only screen and (max-width: 600px) {
     h5 {
         margin-top: 10px;
+    }
+
+    .social-links {
+        margin-top: 15px;
     }
 
     .whoAreWeItem p {
@@ -338,12 +438,43 @@ margin-top: 20px;
         top: 80px;
     }
 
-    .thingItemPhoto,
-    .categoryPhoto {
-        overflow: hidden;
-        border-radius: 16px;
-        position: relative;
-        background: #000000;
+    .inputButton {
+        border: 1px solid #D2064E;
+    }
+}
+
+@media only screen and (max-width: 978px) {
+    h5 {
+        margin-top: 10px;
     }
 
+    .social-links {
+        margin-top: 15px;
+    }
+
+    .whoAreWeItem p {
+        font-size: 18px;
+    }
+
+    .inputButton {
+        border: 1px solid #D2064E;
+    }
+
+    .whoAreWeIcon {
+        margin: 10px auto;
+    }
+
+    .category__details {
+        opacity: 1;
+        top: 79px;
+    }
+
+    .goingOutRow .category__details {
+        opacity: 1;
+        top: 160px;
+    }
+
+    .inputButton {
+        border: 1px solid #D2064E;
+    }
 }
